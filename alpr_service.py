@@ -23,6 +23,6 @@ class ALPRService:
                     plate = result['results'][0]['plate']
                     return plate
                 else:
-                    return None
+                    return None #exercicio
             else:
                 raise Exception(f"Erro na API: {response.status_code}, {response.text}")
